@@ -105,7 +105,7 @@ h1 {
     transform: scale(1.05);
 }
 
-/* Section À propos */
+/* Section À propos et Réservation */
 .about, .reservation {
     text-align: center;
     max-width: 800px;
@@ -113,7 +113,6 @@ h1 {
     padding: 50px 20px;
 }
 
-/* Section réservation */
 .reservation {
     background-color: #1e0f0f;
     padding: 40px;
@@ -124,4 +123,56 @@ h1 {
 .reservation .button {
     margin-top: 15px;
     display: inline-block;
+}
+
+/* Media Queries pour la responsivité */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .hero .content {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .photo img {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px 15px;
+    }
+
+    .hero {
+        padding: 80px 15px 40px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 }
