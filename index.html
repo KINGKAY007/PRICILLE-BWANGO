@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priscille Bwango - Marketing Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h2 class="logo">Priscille Bwango</h2>
+        <nav>
+            <a href="#about">À propos</a>
+            <a href="#reservation" class="btn-reservation">Prendre un rendez-vous</a>
+        </nav>
+    </header>
+
+    <!-- Section principale -->
+    <section class="hero">
+        <div class="content">
+            <h1>Boostez votre <span class="highlight">présence digitale</span> avec des stratégies performantes. </h1>
+            <h5>Salut, moi c’est Priscille Bwango. Je suis passionnée par le marketing digital et j’accompagne les entrepreneurs dans la transformation de leur présence en ligne</h5>
+            <a href="https://pricille.mainstackbookings.com" class="button">Prendre un rendez-vous</a>
+        </div>
+        <div class="photo">
+            <img src="pri.jpeg" alt="Priscille Bwango">
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about" class="about">
+        <h2>À propos</h2>
+        <p>Je suis Priscille Bwango, experte en marketing digital. J’aide les entrepreneurs à maximiser leur visibilité grâce à du contenu engageant, des publicités ciblées et des stratégies de vente optimisées.</p>
+    </section>
+
+    <!-- Section Réservation -->
+    <section id="reservation" class="reservation">
+        <h2>Réservez une session</h2>
+        <p>Planifiez un appel ou une consultation avec moi dès maintenant.</p>
+        <a href="https://pricille.mainstackbookings.com" target="_blank" class="button">Réserver maintenant</a>
+    </section>
+
+    <script>
+        // Animation GSAP
+        gsap.from(".hero h1", { opacity: 0, y: 30, duration: 1.5, ease: "power3.out" });
+        gsap.from(".hero .button", { opacity: 0, y: 10, duration: 3, delay: 1, ease: "power2.out" });
+        gsap.from(".photo img", { opacity: 0, scale: 0.9, duration: 1.5, delay: 0.5, ease: "power2.out" });
+        gsap.from("header", { opacity: 0, y: -50, duration: 1, ease: "power2.out" });
+    </script>
+
+</body>
+</html>
